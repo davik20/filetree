@@ -1,0 +1,11 @@
+.tree-node {
+  margin-left: 1.6rem;
+}
+
+.tree-node:hover {
+  background-color: var(--node-selected-color);
+}
+
+.tree-node-selected {
+  background-color: var(--node-selected-color);
+}

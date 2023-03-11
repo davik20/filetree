@@ -1,0 +1,48 @@
+.new-folder-input {
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.new-folder-input input {
+  margin-right: 8px;
+  padding: 4px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  font-size: 14px;
+}
+.new-folder-input button {
+  padding: 4px 8px;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--button-text-color);
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.new-file-input {
+  margin-left: 1rem;
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.new-file-input input {
+  margin-right: 8px;
+  padding: 4px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.new-file-input button {
+  padding: 4px 8px;
+  background-color: var(--primary-color);
+  border: none;
+  color: var(--button-text-color);
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+}

@@ -1,0 +1,26 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  padding: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-add-controls {
+  /* margin-left: 5rem; */
+  margin-bottom: 2rem;
+  background-color: var(--node-selected-color);
+  padding: 1rem;
+}
+
+.app-add-controls i {
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--primary-color);
+  margin-right: 1rem;
+  transition: all 0.2s;
+}
+
+.app-add-controls i:hover {
+  transform: scale(1.05);
+}

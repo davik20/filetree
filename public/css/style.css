@@ -1,0 +1,11 @@
+:root {
+  --node-selected-color: #e5e5e5;
+  --node-border-color: #ccc;
+  --primary-color: #3f51b5;
+  --button-text-color: white;
+  --input-border-color: rgba(0, 0, 0, 0.579);
+}
+
+html {
+  font-size: 10px;
+}

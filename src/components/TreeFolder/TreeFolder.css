@@ -1,0 +1,61 @@
+.tree-folder {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 1.6rem;
+  /* margin-bottom: 0.5rem; */
+}
+
+.tree-folder-dropdown {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.tree-folder-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 0.8rem;
+  /* background-image: url("%PUBLIC_URL%/icons/folder-icon.png"); */
+  background-image: url("./folder-icon.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.tree-folder-dropdown:hover {
+  /* background-color: #f5f5f5; */
+}
+
+.tree-folder-toggle {
+  font-size: 1.4rem;
+  margin-right: 0rem;
+  width: 1.6rem;
+  text-align: center;
+}
+
+.tree-folder-toggle i {
+  color: #bbb;
+}
+
+.tree-folder-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+.tree-folder-children {
+  margin-left: 1rem;
+  border-left: 1px solid var(--node-border-color);
+  padding-left: 0.5rem;
+}
+
+.tree-folder-children .create-new {
+  display: flex;
+}
+
+.tree-folder-children .create-new button {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 0.5rem;
+  border: none;
+}

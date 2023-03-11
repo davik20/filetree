@@ -1,0 +1,34 @@
+.tree-file {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tree-file:hover {
+  background-color: var(--node-selected-color);
+}
+.tree-file-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  margin-right: 0.8rem;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReA2SkC7J_OgCLDc-kXD0J2kUFXqeJCw6KVJMku2Am&s");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.tree-file-name {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.tree-file-size {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  margin-right: 0.8rem;
+  color: rgba(46, 45, 45, 0.81);
+}
+
+.tree-file-modified {
+  font-size: 1rem;
+  /* color: #666; */
+}
