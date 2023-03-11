@@ -22,7 +22,8 @@ function NewFileInput({
       console.log(e.target.classList);
       if (
         e.target.classList.contains("fa-folder-plus") ||
-        e.target.classList.contains("fa-file-alt")
+        e.target.classList.contains("fa-file-alt") ||
+        e.target.classList.contains("create-new-button")
       ) {
         console.log(document.querySelector(".app-add-controls"), e.target);
         return;
@@ -35,6 +36,13 @@ function NewFileInput({
         }
       }
     };
+
+    setTimeout(() => {
+      const input = document.querySelector("input");
+      if (input) {
+        input.focus();
+      }
+    }, 500);
     document.body.addEventListener("click", handler);
     return () => {
       document.body.removeEventListener("click", handler);

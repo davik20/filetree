@@ -40,6 +40,7 @@ const TreeFolder: React.FC<TreeFolderProps> = ({
     if (onNewFolder) {
       onNewFolder(name, input);
     }
+    setInput("");
   };
 
   const handleInputChange = (e: any) => {
@@ -88,7 +89,9 @@ const TreeFolder: React.FC<TreeFolderProps> = ({
                 placeholder="New file"
                 type="file"
               />
-              <button onClick={handleCreateFile}>Create</button>
+              <button className="create-new-button" onClick={handleCreateFile}>
+                Create
+              </button>
             </div>
           )}
 
@@ -100,7 +103,12 @@ const TreeFolder: React.FC<TreeFolderProps> = ({
                 placeholder="New folder"
                 type="folder"
               />
-              <button onClick={handleCreateFolder}>Create</button>
+              <button
+                className="create-new-button"
+                onClick={handleCreateFolder}
+              >
+                Create
+              </button>
             </div>
           )}
           {children}

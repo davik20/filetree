@@ -55,7 +55,8 @@
 
 .tree-folder-children .create-new button {
   background-color: var(--primary-color);
-  color: white;
+  color: var(--button-text-color);
   border-radius: 0.5rem;
   border: none;
+  cursor: pointer;
 }
