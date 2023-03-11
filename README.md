@@ -1,7 +1,17 @@
+## How to Install 
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 
 
-### File tree component
+## File tree component
 The user can explore a directory tree structure displayed by this React component. The feature includes expanding and collapsing all directories, highlighting chosen files or folders, opening and closing directories by clicking on them, and adding new files or folders to the file tree. Furthermore, it has drag-and-drop capabilities that let users move files and folders around the directory tree structure.
 
 #### Design Decisions
@@ -20,7 +30,7 @@ To allow the user to create new files or folders within the file tree, I decided
 #### Drag-and-Drop Functionality
 I  implemented drag-and-drop functionality. The user can simply click and drag a file or folder to a new location within the tree, and the file or folder will be moved to that location.
 
-### Potential Improvements
+## Potential Improvements
 
 
 #### Search Functionality
@@ -41,20 +51,5 @@ src
 
 
 
-# Getting Started with Create React App
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-## Available Scripts
-
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
 
