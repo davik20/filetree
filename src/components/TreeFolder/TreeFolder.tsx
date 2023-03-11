@@ -29,13 +29,17 @@ const TreeFolder: React.FC<TreeFolderProps> = ({
   const handleCreateFile = (e: any) => {
     e.stopPropagation();
     if (!input) return;
-    onNewFile(name, input);
+    if (onNewFile) {
+      onNewFile(name, input);
+    }
   };
 
   const handleCreateFolder = (e: any) => {
     e.stopPropagation();
     if (!input) return;
-    onNewFolder(name, input);
+    if (onNewFolder) {
+      onNewFolder(name, input);
+    }
   };
 
   const handleInputChange = (e: any) => {
@@ -53,7 +57,9 @@ const TreeFolder: React.FC<TreeFolderProps> = ({
       onClick={e => {
         console.log("selecting");
         e.stopPropagation();
-        onSelected(name);
+        if (onSelected) {
+          onSelected(name);
+        }
       }}
     >
       <div

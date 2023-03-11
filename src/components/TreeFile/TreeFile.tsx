@@ -28,7 +28,9 @@ const TreeFile: React.FC<TreeFileProps> = ({
       }`}
       onClick={e => {
         e.stopPropagation();
-        onSelected(name);
+        if (onSelected) {
+          onSelected(name);
+        }
       }}
       onDragStart={onDragStart}
       onDragOver={onDragOver}

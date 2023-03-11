@@ -30,8 +30,9 @@ function NewFileInput({
       }
       if (isCreating && e.target && !e.target.contains(newFolderRef.current)) {
         console.log("is creating");
-
-        setIsCreating(null);
+        if (setIsCreating) {
+          setIsCreating(null);
+        }
       }
     };
     document.body.addEventListener("click", handler);
