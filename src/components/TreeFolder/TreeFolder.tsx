@@ -32,6 +32,7 @@ const TreeFolder: React.FC<TreeFolderProps> = ({
     if (onNewFile) {
       onNewFile(name, input);
     }
+    setInput("");
   };
 
   const handleCreateFolder = (e: any) => {
