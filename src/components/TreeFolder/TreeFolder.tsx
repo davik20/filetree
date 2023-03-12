@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { DragEventHandler, useState } from "react";
 import "./TreeFolder.css";
 import UseAppContext from "../../context/AppContext/useAppContext";
 import NewFileInput from "../Input/NewFileInput";
@@ -7,10 +7,10 @@ type TreeFolderProps = {
   name: string;
   isOpen: boolean;
   onToggle: () => void;
-  children: any;
-  onDrop: any;
-  onDragStart: any;
-  onDragOver: any;
+  children: React.ReactNode;
+  onDrop: DragEventHandler<HTMLDivElement>;
+  onDragStart: DragEventHandler<HTMLDivElement>;
+  onDragOver: DragEventHandler<HTMLDivElement>;
 };
 
 const TreeFolder: React.FC<TreeFolderProps> = ({
