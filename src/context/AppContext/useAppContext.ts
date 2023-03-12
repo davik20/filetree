@@ -1,5 +1,6 @@
 import {useContext, createContext} from 'react'
 import { TreeNodeInterface } from '../../components/TreeNode/TreeNodeInterface';
+import { DragEventHandler } from 'react';
 
 
 
@@ -15,7 +16,8 @@ type Context =  {
     data?: any;
     handleIsCreating?: any;
     setIsCreating?: (value: string | null) => void;
-    onDrop?:any;
+    onDrop?:DragEventHandler<HTMLDivElement>;
+
     
 
 }
