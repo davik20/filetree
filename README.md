@@ -39,6 +39,8 @@ Another potential improvement would be to add search functionality to the compon
 #### Improved Styling
 The styling of the component could be improved to make it more visually appealing and user-friendly. This could include adding animations to expand and collapse directories, as well as using a more modern design language for the icons and overall layout.
 
+### Test
+Adding appropriate test for the react components is another improvement, this improves reliability and minimizes future bugs
 
 
 ```
