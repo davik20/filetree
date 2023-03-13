@@ -19,18 +19,18 @@ function NewFileInput({
 
   useEffect(() => {
     let handler = (e: any) => {
-      console.log(e.target.classList);
+      // console.log(e.target.classList);
       if (
         e.target.classList.contains("fa-folder-plus") ||
         e.target.classList.contains("fa-file-alt") ||
         e.target.classList.contains("create-new-button")
       ) {
-        console.log(document.querySelector(".app-add-controls"), e.target);
+        // console.log(document.querySelector(".app-add-controls"), e.target);
         return;
       } else {
       }
       if (isCreating && e.target && !e.target.contains(newFolderRef.current)) {
-        console.log("is creating");
+        // console.log("is creating");
         if (setIsCreating) {
           setIsCreating(null);
         }

@@ -4,6 +4,7 @@
   --primary-color: #3f51b5;
   --button-text-color: white;
   --input-border-color: rgba(0, 0, 0, 0.579);
+  --tree-file-color: rgba(46, 45, 45, 0.81);
 }
 
 html {

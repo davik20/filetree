@@ -14,7 +14,7 @@ function AppContextProvider({ children }: Iprops) {
 
   const onSelected = (name: string) => {
     setSelected(name);
-    console.log("selected", name);
+    // console.log("selected", name);
   };
 
   const updateData = (data: TreeNodeInterface) => setData(data);

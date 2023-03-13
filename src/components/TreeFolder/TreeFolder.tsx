@@ -57,7 +57,7 @@ const TreeFolder: React.FC<TreeFolderProps> = ({
       // onDragEnd={}
       className={`tree-folder`}
       onClick={e => {
-        console.log("selecting");
+        // console.log("selecting");
         e.stopPropagation();
         if (onSelected) {
           onSelected(name);

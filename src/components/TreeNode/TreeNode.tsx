@@ -44,7 +44,7 @@ const TreeNode: React.FC<TreeNodeProps> = ({ node, parentNode }) => {
       };
     }
 
-    console.log(data);
+    // console.log(data);
     event.dataTransfer.setData("text/plain", JSON.stringify(data));
   };
 

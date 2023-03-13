@@ -52,8 +52,6 @@ export const   findSelectedFolder = (node: any, folderName: string): any => {
 
           return currentNode;
         } else {
-          // console.log(currentNode, "new est");
-          console.log("children ", currentNode);
           currentNode.children.forEach((child: TreeNodeInterface) => {
             findAndUpdate(
                 node_to_find,
@@ -67,17 +65,12 @@ export const   findSelectedFolder = (node: any, folderName: string): any => {
       }
     } else if (kind === "push_into_children") {
       if (currentNode.kind === "directory") {
-        console.log(parent_to_add_to, "parent to add to");
         if (parent_to_add_to?.name === currentNode.name) {
           currentNode.children.push(node_to_find);
-          console.log("node to update ", node_to_find);
-          console.log("pusing");
           return currentNode;
         } else {
-          // console.log(currentNode, "new est");
          
           currentNode.children.forEach((child: TreeNodeInterface) => {
-            console.log("updating child");
             findAndUpdate(
                 node_to_find,
               child,
@@ -89,5 +82,5 @@ export const   findSelectedFolder = (node: any, folderName: string): any => {
         }
       }
     }
-    console.log(currentNode);
+  
   };
